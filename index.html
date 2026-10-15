@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Navith S — Full Stack Developer & AI Engineer</title>
+  <meta name="description"
+    content="Portfolio of Mohamed Navith S — Computer Science graduate skilled in Python, React.js, FastAPI, PostgreSQL and AI-powered application development." />
+  <meta name="keywords"
+    content="Mohamed Navith, Full Stack Developer, Python, React.js, FastAPI, PostgreSQL, AI Engineer, Portfolio" />
+  <meta property="og:title" content="Mohamed Navith S — Full Stack Developer" />
+  <meta property="og:description"
+    content="Computer Science graduate with expertise in Python, React.js, FastAPI and AI-powered solutions." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-mesh">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav glass-nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">MN</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-hire" id="btn-hire-nav">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu glass" id="mobile-menu">
+    <a href="#about" class="mobile-link" id="mob-about">About</a>
+    <a href="#skills" class="mobile-link" id="mob-skills">Skills</a>
+    <a href="#projects" class="mobile-link" id="mob-projects">Projects</a>
+    <a href="#experience" class="mobile-link" id="mob-exp">Experience</a>
+    <a href="#contact" class="mobile-link" id="mob-contact">Contact</a>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">~/navith — bash</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+          <p class="terminal-output">Mohamed Navith S</p>
+          <p class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat role.txt</span></p>
+          <p class="terminal-output"><span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
+          </p>
+        </div>
+      </div>
+      <h1 class="hero-name">
+        Mohamed <span class="gradient-text">Navith</span> S
+      </h1>
+      <p class="hero-tagline">Full Stack Developer & AI Engineer</p>
+      <p class="hero-desc">
+        Building scalable web apps, intelligent pipelines, and open-source platforms —
+        from <span class="highlight">Python backends</span> to <span class="highlight">React frontends</span>.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary" id="btn-view-projects">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="mailto:mdnavith@gmail.com" class="btn-secondary" id="btn-hero-contact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,12 2,6" />
+          </svg>
+          <span>Get in Touch</span>
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MdNvD" target="_blank" rel="noopener" class="social-link" id="social-github"
+          aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mohamednavith" target="_blank" rel="noopener" class="social-link"
+          id="social-linkedin" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:mdnavith@gmail.com" class="social-link" id="social-email" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,12 2,6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-img-container">
+          <img src="assets/avatar.png" alt="Mohamed Navith S" class="avatar-img" id="hero-avatar" />
+        </div>
+        <div class="floating-badge fb-python">
+          <span>🐍</span> Python
+        </div>
+        <div class="floating-badge fb-react">
+          <span>⚛️</span> React
+        </div>
+        <div class="floating-badge fb-ai">
+          <span>🤖</span> AI/ML
+        </div>
+        <div class="floating-badge fb-docker">
+          <span>🐳</span> Docker
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / BENTO SECTION ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">Crafting Digital <span class="gradient-text">Experiences</span></h2>
+      <div class="bento-grid">
+
+        <!-- Bio Card -->
+        <div class="bento-card bento-bio reveal glass">
+          <div class="card-glow"></div>
+          <div class="bento-icon">👨‍💻</div>
+          <h3>Computer Science Graduate</h3>
+          <p>B.Tech CSE student at <strong>B.S. Abdur Rahman Crescent Institute</strong>, Chennai. CGPA: <span
+              class="stat-num">7.68/10</span>. Graduating <strong>May 2026</strong>.</p>
+          <p>Passionate about building scalable systems, integrating AI into real-world applications, and contributing
+            to open-source projects.</p>
+        </div>
+
+        <!-- Stats Card -->
+        <div class="bento-card bento-stats reveal glass">
+          <div class="card-glow"></div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-num counter" data-target="3">0</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num counter" data-target="25">0</span>
+              <span class="stat-label">Tests Passing</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num counter" data-target="7">0</span>
+              <span class="stat-label">Tech Stacks</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num counter" data-target="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="bento-card bento-location reveal glass">
+          <div class="card-glow"></div>
+          <div class="location-content">
+            <div class="loc-icon">📍</div>
+            <div>
+              <h4>Chennai, India</h4>
+              <p>Tamil Nadu</p>
+            </div>
+          </div>
+          <div class="location-map">
+            <div class="map-dot"></div>
+          </div>
+        </div>
+
+        <!-- Currently Learning / Focus Card -->
+        <div class="bento-card bento-focus reveal glass">
+          <div class="card-glow"></div>
+          <div class="bento-icon">🚀</div>
+          <h3>Current Focus</h3>
+          <div class="focus-tags">
+            <span class="tag">AI-Powered Apps</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">System Design</span>
+            <span class="tag">Open Source</span>
+            <span class="tag">Cloud AWS</span>
+          </div>
+        </div>
+
+        <!-- Email CTA Card -->
+        <div class="bento-card bento-cta reveal glass glow-card">
+          <div class="card-glow"></div>
+          <p class="cta-label">Let's Build Together</p>
+          <h3>Open to Full-time Roles & Freelance</h3>
+          <a href="mailto:mdnavith@gmail.com" class="btn-primary inline-btn" id="bento-contact-btn">
+            <span>Say Hello 👋</span>
+          </a>
+        </div>
+
+        <!-- Education Card -->
+        <div class="bento-card bento-edu reveal glass">
+          <div class="card-glow"></div>
+          <div class="edu-badge">🎓</div>
+          <h3>B.Tech CSE</h3>
+          <p class="edu-inst">B.S. Abdur Rahman Crescent Institute</p>
+          <div class="edu-meta">
+            <span class="cgpa-badge">CGPA: 7.68</span>
+            <span class="year-badge">May 2026</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Technical Arsenal</div>
+      <h2 class="section-title reveal">Skills & <span class="gradient-text">Technologies</span></h2>
+      <div class="skills-categories">
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="pill-icon">🐍</span>Python</div>
+            <div class="skill-pill"><span class="pill-icon">⚡</span>JavaScript</div>
+            <div class="skill-pill"><span class="pill-icon">🗄️</span>SQL</div>
+            <div class="skill-pill"><span class="pill-icon">🌐</span>HTML5</div>
+            <div class="skill-pill"><span class="pill-icon">🎨</span>CSS3</div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">⚛️</span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill hot"><span class="pill-icon">⚛️</span>React.js</div>
+            <div class="skill-pill hot"><span class="pill-icon">🚀</span>FastAPI</div>
+            <div class="skill-pill"><span class="pill-icon">🟢</span>Node.js</div>
+            <div class="skill-pill"><span class="pill-icon">🔥</span>Express.js</div>
+            <div class="skill-pill"><span class="pill-icon">🌶️</span>Flask</div>
+            <div class="skill-pill"><span class="pill-icon">💨</span>Tailwind CSS</div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">🗄️</span>
+            <h3>Databases & Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill hot"><span class="pill-icon">🐘</span>PostgreSQL</div>
+            <div class="skill-pill"><span class="pill-icon">🐬</span>MySQL</div>
+            <div class="skill-pill"><span class="pill-icon">🍃</span>MongoDB</div>
+            <div class="skill-pill"><span class="pill-icon">🔧</span>Git</div>
+            <div class="skill-pill"><span class="pill-icon">📬</span>Postman</div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">☁️</span>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="pill-icon">☁️</span>AWS EC2</div>
+            <div class="skill-pill"><span class="pill-icon">📦</span>AWS S3</div>
+            <div class="skill-pill hot"><span class="pill-icon">🐳</span>Docker</div>
+            <div class="skill-pill"><span class="pill-icon">⚙️</span>GitHub Actions</div>
+            <div class="skill-pill"><span class="pill-icon">🔄</span>CI/CD</div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">🤖</span>
+            <h3>AI & Data Processing</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill hot"><span class="pill-icon">🤖</span>Google Gemini API</div>
+            <div class="skill-pill"><span class="pill-icon">📄</span>PyMuPDF</div>
+            <div class="skill-pill"><span class="pill-icon">👁️</span>Tesseract OCR</div>
+            <div class="skill-pill"><span class="pill-icon">🐼</span>Pandas</div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal glass">
+          <div class="cat-header">
+            <span class="cat-icon">🌐</span>
+            <h3>Web & APIs</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill hot"><span class="pill-icon">🔗</span>RESTful APIs</div>
+            <div class="skill-pill"><span class="pill-icon">🔌</span>API Integration</div>
+            <div class="skill-pill"><span class="pill-icon">📡</span>HTTP Methods</div>
+            <div class="skill-pill"><span class="pill-icon">📋</span>JSON</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Selected Work</div>
+      <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal glass" id="project-social-listening">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="https://github.com/MdNvD/social-listening-platform" target="_blank" rel="noopener"
+                class="icon-link" id="p1-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://github.com/MdNvD/social-listening-platform" target="_blank" rel="noopener"
+                class="icon-link" id="p1-live" aria-label="View project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge open-source">Open Source</div>
+          <h3 class="project-title">Social Listening Platform</h3>
+          <p class="project-desc">
+            A platform to collect and analyze keyword-based mentions from RSS feeds with NLP-powered sentiment analysis,
+            topic classification, and automated brand monitoring.
+          </p>
+          <ul class="project-highlights">
+            <li>✅ 25/25 passing automated tests</li>
+            <li>🧠 ML-powered sentiment analysis</li>
+            <li>🐳 Docker-based deployment</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>React.js</span>
+            <span>PostgreSQL</span>
+            <span>NLP</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal glass featured-project" id="project-firs">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="https://github.com/MdNvD/FIRS-eservice" target="_blank" rel="noopener" class="icon-link"
+                id="p2-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge featured">Featured</div>
+          <h3 class="project-title">FIRS eServices Receipt Data Extraction</h3>
+          <p class="project-desc">
+            Automated system to retrieve receipt information from the FIRS eservices portal and extract structured
+            financial data from PDF receipts using PyMuPDF.
+          </p>
+          <ul class="project-highlights">
+            <li>📄 PDF data extraction & parsing</li>
+            <li>🔐 Role-based access control (RBAC)</li>
+            <li>📊 Excel export & audit logging</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>React.js</span>
+            <span>PostgreSQL</span>
+            <span>PyMuPDF</span>
+            <span>Excel</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal glass" id="project-ai-bl">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-number">03</div>
+            <div class="project-links">
+              <a href="https://github.com/MdNvD/AI-BL-Extractor" target="_blank" rel="noopener" class="icon-link"
+                id="p3-github" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge ai">AI-Powered</div>
+          <h3 class="project-title">AI-BL-Extractor</h3>
+          <p class="project-desc">
+            An AI-powered application to extract and process information from documents using Google Gemini API, OCR,
+            and automated document parsing workflows.
+          </p>
+          <ul class="project-highlights">
+            <li>🤖 Google Gemini AI integration</li>
+            <li>👁️ Tesseract OCR processing</li>
+            <li>📑 Unstructured → Structured data</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Gemini AI</span>
+            <span>OCR</span>
+            <span>PyMuPDF</span>
+            <span>Pandas</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">Work History</div>
+      <h2 class="section-title reveal">Experience & <span class="gradient-text">Timeline</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" id="exp-combosquare">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Full Stack Development Intern</h3>
+                <p class="tl-company">ComboSquare — Tech Startup</p>
+              </div>
+              <div class="tl-badge">
+                <span class="tl-period">Jul – Aug 2025</span>
+                <span class="tl-location">📍 Chennai, India</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>Gained hands-on exposure to full-stack web development in a startup environment</li>
+              <li>Developed understanding of frontend (React.js) and backend technologies (Node.js, APIs)</li>
+              <li>Applied practical skills in building and connecting web application components</li>
+            </ul>
+            <div class="tl-tech">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>REST APIs</span>
+              <span>Full Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-education">
+          <div class="timeline-dot edu-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">B.Tech Computer Science Engineering</h3>
+                <p class="tl-company">B.S. Abdur Rahman Crescent Institute of Science & Technology</p>
+              </div>
+              <div class="tl-badge">
+                <span class="tl-period">2022 – May 2026</span>
+                <span class="tl-location">📍 Chennai, India</span>
+              </div>
+            </div>
+            <ul class="tl-bullets">
+              <li>CGPA: <strong>7.68 / 10.0</strong></li>
+              <li>Developed multiple full-stack projects and AI applications during coursework</li>
+              <li>Active in open-source development and tech communities</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS SECTION ========== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-label reveal">Recognition</div>
+      <h2 class="section-title reveal">Achievements & <span class="gradient-text">Highlights</span></h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal glass" id="ach-fullstack">
+          <div class="ach-icon">⚡</div>
+          <h3>Full Stack Expertise</h3>
+          <p>Hands-on experience in Python, React.js, FastAPI, PostgreSQL, RESTful APIs, and AI-powered application
+            development.</p>
+        </div>
+        <div class="achievement-card reveal glass" id="ach-projects">
+          <div class="ach-icon">🏆</div>
+          <h3>Project Excellence</h3>
+          <p>Developed 3 major projects covering social listening, AI invoice extraction, document processing, and
+            open-source tooling.</p>
+        </div>
+        <div class="achievement-card reveal glass" id="ach-tests">
+          <div class="ach-icon">✅</div>
+          <h3>25/25 Tests Passing</h3>
+          <p>Achieved 100% test coverage verification on the Social Listening Platform with automated testing suite.</p>
+        </div>
+        <div class="achievement-card reveal glass" id="ach-opensource">
+          <div class="ach-icon">🌍</div>
+          <h3>Open Source Contributor</h3>
+          <p>Built and published open-source platforms on GitHub with documentation, Docker support, and CI/CD
+            pipelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-sub reveal">I'm actively looking for new opportunities. Whether you have a job opening, a
+        project idea, or just want to say hi — my inbox is always open!</p>
+      <div class="contact-grid">
+        <div class="contact-links reveal">
+          <a href="mailto:mdnavith@gmail.com" class="contact-card glass" id="contact-email-card">
+            <div class="contact-icon email-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,12 2,6" />
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-type">Email</span>
+              <span class="contact-value">mdnavith05@gmail.com</span>
+            </div>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/mohamednavith" target="_blank" rel="noopener" class="contact-card glass"
+            id="contact-linkedin-card">
+            <div class="contact-icon linkedin-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-type">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/mohamednavith</span>
+            </div>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://github.com/MdNvD" target="_blank" rel="noopener" class="contact-card glass"
+            id="contact-github-card">
+            <div class="contact-icon github-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-type">GitHub</span>
+              <span class="contact-value">github.com/MdNvD</span>
+            </div>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="tel:+919360427231" class="contact-card glass" id="contact-phone-card">
+            <div class="contact-icon phone-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 12.5 19.79 19.79 0 01.43 4.07 2 2 0 012.42 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-type">Phone</span>
+              <span class="contact-value">+91 9360427241</span>
+            </div>
+            <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal glass">
+          <div class="cta-decoration"></div>
+          <h3>Ready to collaborate?</h3>
+          <p>I'm currently available for full-time positions, internships, and freelance projects. Let's build something
+            amazing together.</p>
+          <div class="availability-status">
+            <span class="avail-dot"></span>
+            <span>Available for hire — October 2026</span>
+          </div>
+          <a href="mailto:mdnavith@gmail.com" class="btn-primary" id="contact-send-btn">
+            <span>Send a Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">MN</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">Designed & Built by <strong>Mohamed Navith S</strong> · 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/MdNvD" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+          <a href="https://linkedin.com/in/mohamednavith" target="_blank" rel="noopener"
+            id="footer-linkedin">LinkedIn</a>
+          <a href="mailto:mdnavith@gmail.com" id="footer-email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
